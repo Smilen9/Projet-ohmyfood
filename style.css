@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+
+body, html{
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: 'Shrinkhand', 'Roboto';
+}
+
+/* HEADER */
+
+header{
+    padding: 25px 25px 0;
+}
+
+header .logo{
+    margin: 20px auto;
+    display: block;
+    max-width: 50%;
+}
+
+/* MAIN */
+
+.form{
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaeaea;
+}
+
+.form form{
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+
+}
+
+.form form label{
+    font-size: 20px;
+}
+
+.form form input{
+    background-color: #eaeaea;
+    border: none;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.top{
+    text-align: center;
+}
