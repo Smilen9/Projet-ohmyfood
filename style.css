@@ -3,34 +3,33 @@
 }
 
 body, html{
-    margin: 0 auto;
-    font-size: 16px;
-    font-family: 'Shrinkhand', 'Roboto';
+    margin: 0;
+    font-size: 17px;
+    font-family: "Shrinkhand", "Roboto", sans-serif, Arial;
+    max-width: 425px;
 }
 
-/* HEADER */
+    /* HEADER */
 
 .header{
+    width: 100%;
     box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
     height: 100px;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    padding: 55px 20px 10px;
+    text-align: center;
 }
 
 .header__logo{
     max-width: 220px;
 }
 
-/* MAIN */
+    /* MAIN */
 
 main{
     margin-top: 5px;
 }
 
-/*MENU DE RECHERCHE DE VILLE*/
+    /*MENU DE RECHERCHE DE VILLE*/
 
 .topform{
     padding: 20px;
@@ -58,8 +57,7 @@ main{
     margin-left: 15px;
 }
 
-
-/* TEXTE DE RECHERCHE */
+    /* TEXTE DE RECHERCHE */
 
 .menu-top{
     width: 100%;
@@ -69,22 +67,165 @@ main{
     padding: 0 25px 25px;
 }
 
-.menu-top h2{
+.menu-top h1{
     margin: 30px 0 0;
-    font-size: 30px;
+    font-size: 27px;
     text-align: center;
 }
 
 .menu-top p{
     text-align: center;
+    font-size: 18px;
     margin: 25px 0;
 }
 
 .menu-top__btn{
     text-decoration: none;
     color: white;
-    background-color: pink;
-    border-radius: 20px;
-    padding: 10px;
-    box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+    background: linear-gradient(174deg,#f8a2ed 2%, #cf1aa8);
+    border-radius: 100px;
+    padding: 15px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 25%);
+}
+
+    /*MENU FONCTIONNEMENT*/
+.fonction{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.fonction h2{
+    font-size: 30px;
+    margin: 25px 0 10px;
+}
+
+.fonction__card{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.fonction__card span{
+    color: white;
+    background:#ce0ea4;
+    border-radius: 50%;
+    padding: 3px 8px ;
+    transform: translate(-100%, 0%);
+}
+
+.fonction__card li{
+    list-style: none;
+    height: 70px;
+    width: 100%;
+    padding: 15px;
+    margin: 25px 0;
+    border-radius: 18px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 15%);
+    display: flex;
+    align-items: center;
+}
+
+.fonction__card li:hover{
+    background-color: #f8d4f5;
+}
+.fonction i{
+    margin: 0 25px 0 -1px;
+}
+.fonction__card i:hover{
+    color: violet;
+}
+
+.fonction__card a{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+        /* RESTAURANT */
+
+.container_card{
+    padding: 20px;
+}
+
+.container_card h2{
+    font-size: 30px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    width: 100%;
+    height: 260px;
+    border-radius: 25px;
+    box-shadow:  0 5px 10px rgb(0 0 0 / 15%);
+}
+
+.card:hover{
+    transform: scale(1.03);
+}
+
+.card_img{
+    border-radius: 25px 25px 0 0;
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card_title{
+    display: flex;
+    justify-content:space-between;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 10px 20px 3px;
+}
+
+.card_title i{
+    transform: translate(0, 50%);
+    font-weight:100;
+    font-size: x-large;
+}
+
+.card_line{
+    padding: 0 20px;
+}
+
+        /*  FOOTER  */
+
+footer{
+    background-color: rgb(49, 47, 47);
+    padding: 20px;
+}
+
+.footer_title{
+    font-family: 'Shrikland';
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer_info{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_info i{
+    font-size: 12px;
+    padding-right: 10px;
+}
+
+.footer_info a{
+    width: 50%;
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.footer_info a:hover{
+    color: rgb(172, 164, 164)
 }
