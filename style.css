@@ -1,245 +1,228 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-body, html{
-    margin: 0;
-    font-size: 17px;
-    font-family:'Roboto', sans-serif, Arial;
+body {
+  margin: 0;
+  font-size: 17px;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
-main{
-    max-width: 425px;
+html {
+  margin: 0;
+  font-size: 17px;
+  font-family: "Roboto";
 }
 
-    /* HEADER */
-
-.header{
-    width: 100%;
-    box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
-    height: 80px;
-    padding: 30px;
-    text-align: center;
+main {
+  max-width: 425px;
+  margin-top: 5px;
 }
 
-.header__logo{
-    max-width: 20%;
+/*  HEADER   */
+.header {
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  height: 90px;
+  padding: 40px 0 0;
+  text-align: center;
 }
 
-    /* MAIN */
-
-main{
-    margin-top: 5px;
+.header__logo {
+  max-width: 45%;
 }
 
-    /*MENU DE RECHERCHE DE VILLE*/
-
-.topform{
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #eaeaea;
+/*  FORMULAIRE    */
+.topform {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+}
+.topform form {
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+}
+.topform label {
+  font-size: 20px;
+}
+.topform input {
+  background-color: #eaeaea;
+  border: none;
+  font-size: 20px;
+  margin-left: 15px;
 }
 
-.topform form{
-    margin-left: 100px;
-    display: flex;
-    align-items: center;
-
+/*   MENU de nav   */
+.menu-top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 25px 25px;
+}
+.menu-top h1 {
+  margin: 30px 0 0;
+  font-size: 27px;
+  text-align: center;
+}
+.menu-top p {
+  text-align: center;
+  font-size: 18px;
+  margin: 25px 0;
 }
 
-.topform label{
-    font-size: 20px;
+.menu-top__btn {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(174deg, #ff79da 2%, #9356dc);
+  border-radius: 100px;
+  padding: 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 
-.topform input{
-    background-color: #eaeaea;
-    border: none;
-    font-size: 20px;
-    margin-left: 15px;
+/* Partie FONCTION*/
+.fonction {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+.fonction h2 {
+  font-size: 30px;
+  margin: 25px 0 10px;
+}
+.fonction i {
+  margin: 0 25px 0 -1px;
 }
 
-    /* TEXTE DE RECHERCHE */
-
-.menu-top{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 25px 25px;
+.fonction__card {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+.fonction__card span {
+  color: white;
+  background: #9356dc;
+  border-radius: 50%;
+  padding: 3px 8px;
+  transform: translate(-100%, 0%);
+}
+.fonction__card li {
+  list-style: none;
+  height: 70px;
+  width: 100%;
+  padding: 15px;
+  margin: 25px 0;
+  border-radius: 18px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+}
+.fonction__card li:hover {
+  background-color: #f8d4f5;
+}
+.fonction__card i:hover {
+  color: #ff79da;
+}
+.fonction__card a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
 }
 
-.menu-top h1{
-    margin: 30px 0 0;
-    font-size: 27px;
-    text-align: center;
+/*   Partie central du site - Les cartes      */
+.container_card {
+  padding: 20px;
+}
+.container_card h2 {
+  font-size: 30px;
 }
 
-.menu-top p{
-    text-align: center;
-    font-size: 18px;
-    margin: 25px 0;
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+  width: 100%;
+  height: 260px;
+  border-radius: 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.card:hover {
+  transform: scale(1.03);
+}
+.card a {
+  text-decoration: none;
+  color: #000;
 }
 
-.menu-top__btn{
-    text-decoration: none;
-    color: white;
-    background: linear-gradient(174deg,#ff79da 2%, #9356dc);
-    border-radius: 100px;
-    padding: 15px;
-    box-shadow: 0 5px 10px rgb(0 0 0 / 25%);
+.card_img {
+  border-radius: 25px 25px 0 0;
+  height: 180px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-    /*MENU FONCTIONNEMENT*/
-.fonction{
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
+.new {
+  color: green;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  padding: 6px;
+  background-color: #99e2d0;
 }
 
-.fonction h2{
-    font-size: 30px;
-    margin: 25px 0 10px;
+.card_title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 15px 20px 3px;
+}
+.card_title i {
+  transform: translate(0, 50%);
+  font-weight: 100;
+  font-size: x-large;
 }
 
-.fonction__card{
-    margin: 0;
-    width: 100%;
-    text-align: center;
+.card_line {
+  padding: 0 20px;
 }
 
-.fonction__card span{
-    color: white;
-    background:#9356dc;
-    border-radius: 50%;
-    padding: 3px 8px ;
-    transform: translate(-100%, 0%);
+/*  FOOTER    */
+footer {
+  background-color: rgb(49, 47, 47);
+  padding: 20px;
 }
 
-.fonction__card li{
-    list-style: none;
-    height: 70px;
-    width: 100%;
-    padding: 15px;
-    margin: 25px 0;
-    border-radius: 18px;
-    box-shadow: 0 5px 10px rgb(0 0 0 / 15%);
-    display: flex;
-    align-items: center;
+.footer_title {
+  font-family: "Shrikland";
+  color: white;
+  display: block;
+  margin-bottom: 10px;
 }
 
-.fonction__card li:hover{
-    background-color: #f8d4f5;
+.footer_info {
+  display: flex;
+  flex-direction: column;
 }
-.fonction i{
-    margin: 0 25px 0 -1px;
+.footer_info i {
+  font-size: 12px;
+  padding-right: 10px;
 }
-.fonction__card i:hover{
-    color: #ff79da;
+.footer_info a {
+  width: 50%;
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 5px 0;
 }
-
-.fonction__card a{
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-}
-
-        /* RESTAURANT */
-
-.container_card{
-    padding: 20px;
-}
-
-.container_card h2{
-    font-size: 30px;
-}
-
-.card{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin: 30px 0;
-    width: 100%;
-    height: 260px;
-    border-radius: 25px;
-    box-shadow:  0 5px 10px rgb(0 0 0 / 15%);
-}
-
-.card:hover{
-    transform: scale(1.03);
-}
-
-.card_img{
-    
-    border-radius: 25px 25px 0 0;
-    height: 180px;
-    width: 100%;
-    object-fit: cover;
-}
-
-.new{
-    color: green;
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    padding: 6px;
-    background-color: #99e2d0;
-}
-
-.card_title{
-    display: flex;
-    justify-content:space-between;
-    font-size: 20px;
-    font-weight: 800;
-    padding: 10px 20px 3px;
-}
-
-.card_title i{
-    transform: translate(0, 50%);
-    font-weight:100;
-    font-size: x-large;
-}
-
-.card_line{
-    padding: 0 20px;
-}
-
-        /*  FOOTER  */
-
-footer{
-    background-color: rgb(49, 47, 47);
-    padding: 20px;
-}
-
-.footer_title{
-    font-family: 'Shrikland';
-    color: white;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.footer_info{
-    display: flex;
-    flex-direction: column;
-}
-
-.footer_info i{
-    font-size: 12px;
-    padding-right: 10px;
-}
-
-.footer_info a{
-    width: 50%;
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 5px 0;
-}
-
-.footer_info a:hover{
-    color: rgb(172, 164, 164)
-}
+.footer_info a:hover {
+  color: rgb(172, 164, 164);
+}/*# sourceMappingURL=style.css.map */
