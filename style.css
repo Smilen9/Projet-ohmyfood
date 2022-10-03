@@ -5,7 +5,10 @@
 body, html{
     margin: 0;
     font-size: 17px;
-    font-family: "Shrinkhand", "Roboto", sans-serif, Arial;
+    font-family:'Roboto', sans-serif, Arial;
+}
+
+main{
     max-width: 425px;
 }
 
@@ -14,13 +17,13 @@ body, html{
 .header{
     width: 100%;
     box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
-    height: 100px;
-    padding: 55px 20px 10px;
+    height: 80px;
+    padding: 30px;
     text-align: center;
 }
 
 .header__logo{
-    max-width: 220px;
+    max-width: 20%;
 }
 
     /* MAIN */
@@ -82,7 +85,7 @@ main{
 .menu-top__btn{
     text-decoration: none;
     color: white;
-    background: linear-gradient(174deg,#f8a2ed 2%, #cf1aa8);
+    background: linear-gradient(174deg,#ff79da 2%, #9356dc);
     border-radius: 100px;
     padding: 15px;
     box-shadow: 0 5px 10px rgb(0 0 0 / 25%);
@@ -111,7 +114,7 @@ main{
 
 .fonction__card span{
     color: white;
-    background:#ce0ea4;
+    background:#9356dc;
     border-radius: 50%;
     padding: 3px 8px ;
     transform: translate(-100%, 0%);
@@ -136,7 +139,7 @@ main{
     margin: 0 25px 0 -1px;
 }
 .fonction__card i:hover{
-    color: violet;
+    color: #ff79da;
 }
 
 .fonction__card a{
@@ -156,6 +159,7 @@ main{
 }
 
 .card{
+    position: relative;
     display: flex;
     flex-direction: column;
     margin: 30px 0;
@@ -170,10 +174,20 @@ main{
 }
 
 .card_img{
+    
     border-radius: 25px 25px 0 0;
     height: 180px;
     width: 100%;
     object-fit: cover;
+}
+
+.new{
+    color: green;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    padding: 6px;
+    background-color: #99e2d0;
 }
 
 .card_title{
