@@ -165,8 +165,7 @@ main {
   border-radius: 25px 25px 0 0;
   height: 180px;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .new {
@@ -225,4 +224,6 @@ footer {
 }
 .footer_info a:hover {
   color: rgb(172, 164, 164);
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
