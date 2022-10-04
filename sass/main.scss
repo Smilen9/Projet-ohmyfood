@@ -1,36 +1,9 @@
-$color-primary:#9356dc;
-$color-second:#ff79da;
-$color-tertiaire:#99e2d0;
+@import "./Utils/variables";
+@import "./Layout/header";
+@import "./Layout/footer";
+@import "./Base/universel";
 
-* {
-	box-sizing: border-box;
-}
-body {
-	margin: 0;
-	font-size: 17px;
-	font-family: 'Roboto', Arial, sans-serif;
-}
-html {
-	margin: 0;
-	font-size: 17px;
-	font-family: 'Roboto';
-}
-main {
-	max-width: 425px;
-	margin-top: 5px;
-}
 
-        /*  HEADER   */
-.header {
-	width: 100%;
-	box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
-	height: 90px;
-	padding: 40px 0 0;
-	text-align: center;
-}
-.header__logo {
-	max-width: 45%;
-}
 
         /*  FORMULAIRE    */
 .topform {
@@ -82,7 +55,7 @@ main {
 	box-shadow: 0 5px 10px rgb(0 0 0 / 25%);
 }
 
-        /* Partie FONCTION*/
+        /*  Partie FONCTION  */
 .fonction {
 	width: 100%;
 	padding: 20px;
@@ -135,7 +108,8 @@ main {
 	}
 }
 
-        /*   Partie central du site - Les cartes      */
+        /*   Partie central du site - Les cartes    */
+
 .container_card {
 	padding: 20px;
 	h2 {
@@ -187,34 +161,4 @@ main {
 }
 .card_line {
 	padding: 0 20px;
-}
-
-        /*  FOOTER    */
-footer {
-	background-color: rgb( 49, 47, 47);
-	padding: 20px;
-}
-.footer_title {
-	font-family: 'Shrikland';
-	color: white;
-	display: block;
-	margin-bottom: 10px;
-}
-.footer_info {
-	display: flex;
-	flex-direction: column;
-	i {
-		font-size: 12px;
-		padding-right: 10px;
-	}
-	a {
-		width: 50%;
-		display: block;
-		color: white;
-		text-decoration: none;
-		padding: 5px 0;
-		&:hover {
-			color: rgb(172, 164, 164);
-		}
-	}
 }

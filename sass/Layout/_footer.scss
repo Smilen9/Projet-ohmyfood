@@ -1,0 +1,29 @@
+        /*  FOOTER    */
+        footer {
+            background-color: rgb( 49, 47, 47);
+            padding: 20px;
+        }
+        .footer_title {
+            font-family: 'Shrikland';
+            color: white;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .footer_info {
+            display: flex;
+            flex-direction: column;
+            i {
+                font-size: 12px;
+                padding-right: 10px;
+            }
+            a {
+                width: 50%;
+                display: block;
+                color: white;
+                text-decoration: none;
+                padding: 5px 0;
+                &:hover {
+                    color: rgb(172, 164, 164);
+                }
+            }
+        }
