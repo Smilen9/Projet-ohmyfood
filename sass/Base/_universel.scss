@@ -1,16 +1,19 @@
+/*Balise universel*/
+
 * {
 	box-sizing: border-box;
 }
-body {
+html, body {
 	margin: 0;
 	font-size: 17px;
 	font-family: 'Roboto', Arial, sans-serif;
 }
-html {
-	margin: 0;
-	font-size: 17px;
-	font-family: 'Roboto';
+
+body h2{
+	font-family: 'Shrikhand';
 }
+
+
 main {
 	max-width: 425px;
 	margin-top: 5px;

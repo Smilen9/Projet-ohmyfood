@@ -1,17 +1,17 @@
+@charset "UTF-8";
+/*Balise universel*/
 * {
   box-sizing: border-box;
 }
 
-body {
+html, body {
   margin: 0;
   font-size: 17px;
   font-family: "Roboto", Arial, sans-serif;
 }
 
-html {
-  margin: 0;
-  font-size: 17px;
-  font-family: "Roboto";
+body h2 {
+  font-family: "Shrikhand";
 }
 
 main {
@@ -19,7 +19,7 @@ main {
   margin-top: 5px;
 }
 
-/*  HEADER   */
+/* Variable des couleurs les plus utilisés*/
 .header {
   width: 100%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -30,6 +30,39 @@ main {
 
 .header__logo {
   max-width: 45%;
+}
+
+/*  FOOTER    */
+footer {
+  background-color: rgb(49, 47, 47);
+  padding: 20px;
+}
+
+.footer_title {
+  font-family: "Shrikland";
+  font-size: 10px;
+  color: white;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer_info {
+  display: flex;
+  flex-direction: column;
+}
+.footer_info i {
+  font-size: 12px;
+  padding-right: 10px;
+}
+.footer_info a {
+  width: 50%;
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 5px 0;
+}
+.footer_info a:hover {
+  color: rgb(172, 164, 164);
 }
 
 /*  FORMULAIRE    */
@@ -83,7 +116,7 @@ main {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 
-/* Partie FONCTION*/
+/*  Partie FONCTION  */
 .fonction {
   width: 100%;
   padding: 20px;
@@ -135,7 +168,7 @@ main {
   color: black;
 }
 
-/*   Partie central du site - Les cartes      */
+/*   Partie central du site - Les cartes    */
 .container_card {
   padding: 20px;
 }
@@ -174,7 +207,7 @@ main {
   right: 15px;
   top: 15px;
   padding: 6px;
-  background-color: #99e2d0;
+  background-color: #99e2d8;
 }
 
 .card_title {
@@ -192,38 +225,6 @@ main {
 
 .card_line {
   padding: 0 20px;
-}
-
-/*  FOOTER    */
-footer {
-  background-color: rgb(49, 47, 47);
-  padding: 20px;
-}
-
-.footer_title {
-  font-family: "Shrikland";
-  color: white;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.footer_info {
-  display: flex;
-  flex-direction: column;
-}
-.footer_info i {
-  font-size: 12px;
-  padding-right: 10px;
-}
-.footer_info a {
-  width: 50%;
-  display: block;
-  color: white;
-  text-decoration: none;
-  padding: 5px 0;
-}
-.footer_info a:hover {
-  color: rgb(172, 164, 164);
 }
 
 /*# sourceMappingURL=style.css.map */
