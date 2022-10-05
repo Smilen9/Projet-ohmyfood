@@ -79,6 +79,15 @@ footer {
   color: rgb(172, 164, 164);
 }
 
+.btn {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(174deg, #ff79da 2%, #9356dc);
+  border-radius: 100px;
+  padding: 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
 /*  FORMULAIRE    */
 .topform {
   padding: 20px;
@@ -119,15 +128,6 @@ footer {
   text-align: center;
   font-size: 18px;
   margin: 25px 0;
-}
-
-.menu-top__btn {
-  text-decoration: none;
-  color: white;
-  background: linear-gradient(174deg, #ff79da 2%, #9356dc);
-  border-radius: 100px;
-  padding: 15px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 
 /*  Partie FONCTION  */

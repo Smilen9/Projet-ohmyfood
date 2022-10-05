@@ -2,6 +2,7 @@
 @import "./Utils/variables";
 @import "./Layout/header";
 @import "./Layout/footer";
+@import "./Composants/btn";
 
 
 
@@ -45,14 +46,6 @@
 		font-size: 18px;
 		margin: 25px 0;
 	}
-}
-.menu-top__btn {
-	text-decoration: none;
-	color: white;
-	background: linear-gradient(174deg,$color-second 2%, $color-primary);
-	border-radius: 100px;
-	padding: 15px;
-	box-shadow: 0 5px 10px rgb(0 0 0 / 25%);
 }
 
         /*  Partie FONCTION  */
