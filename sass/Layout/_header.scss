@@ -1,4 +1,4 @@
-.header {
+.header_index {
 	width: 100%;
 	box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
 	height: 90px;
@@ -7,4 +7,17 @@
 }
 .header__logo {
 	max-width: 45%;
+}
+
+.header_menu {
+	width: 100%;
+	box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+	height: 90px;
+	padding: 40px 0 0;
+	text-align: center;
+	i{
+		color: rgb(44, 44, 44);
+		transform: translate(-350%, -10%);
+		font-size: 25px;
+	}
 }
