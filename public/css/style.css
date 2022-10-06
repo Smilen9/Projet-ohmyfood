@@ -11,7 +11,7 @@ html, body {
   font-family: "Roboto", Arial, sans-serif;
 }
 
-h1, h2 {
+h1 {
   font-family: "Shrikhand", regular;
 }
 
@@ -33,28 +33,45 @@ main {
 .header_index {
   width: 100%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  height: 90px;
-  padding: 40px 0 0;
-  text-align: center;
+  height: 70px;
+  padding: 30px 0;
 }
 
 .header__logo {
   max-width: 45%;
+  display: flex;
+  margin: 0 auto;
 }
 
 .header_menu {
   width: 100%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  height: 90px;
-  padding: 40px 0 0;
-  text-align: center;
+  height: 70px;
+  padding: 10px 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+.header_menu a {
+  display: block;
+  padding-left: 15px;
 }
 .header_menu i {
   color: rgb(44, 44, 44);
-  transform: translate(-350%, -10%);
-  font-size: 25px;
+  font-size: 20px;
 }
 
+@media screen and (max-width: 768px) and (min-width: 426px) {
+  .header_index {
+    padding: 15px 0;
+  }
+  .h .header_menu i {
+    font-size: 25px;
+  }
+  .header__logo {
+    max-width: 35%;
+  }
+}
 /*  FORMULAIRE    */
 .topform {
   padding: 20px;
@@ -237,8 +254,7 @@ main {
   justify-content: space-around;
   align-items: center;
   margin-bottom: 0;
-  height: 50px;
-  padding-top: 30px;
+  padding: 25px 5px 0;
 }
 .container-menu_title h2 {
   margin: 0;
@@ -294,6 +310,9 @@ footer {
   display: block;
   margin-bottom: 10px;
 }
+.footer_title h2 {
+  font-family: "Shrikhand", regular;
+}
 
 .footer_info {
   display: flex;
@@ -304,7 +323,7 @@ footer {
   padding-right: 10px;
 }
 .footer_info a {
-  width: 50%;
+  width: 60%;
   display: block;
   color: white;
   text-decoration: none;

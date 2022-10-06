@@ -8,6 +8,9 @@
             color: white;
             display: block;
             margin-bottom: 10px;
+            h2{
+                font-family: 'Shrikhand', regular ; 
+            }
         }
         .footer_info {
             display: flex;
@@ -17,7 +20,7 @@
                 padding-right: 10px;
             }
             a {
-                width: 50%;
+                width: 60%;
                 display: block;
                 color: white;
                 text-decoration: none;
