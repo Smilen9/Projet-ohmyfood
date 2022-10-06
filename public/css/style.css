@@ -2,16 +2,17 @@
 /*Balise universel*/
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 html, body {
   margin: 0;
-  font-size: 17px;
+  font-size: 16px;
   font-family: "Roboto", Arial, sans-serif;
 }
 
-body h2 {
-  font-family: "Shrikhand";
+body h1 {
+  font-family: "Shrikhand", regular;
 }
 
 main {
@@ -20,7 +21,16 @@ main {
 }
 
 /* Variable des couleurs les plus utilisés*/
-.header {
+.bouton {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(174deg, #ff79da 2%, #9356dc);
+  border-radius: 100px;
+  padding: 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.header_index {
   width: 100%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   height: 90px;
@@ -32,37 +42,17 @@ main {
   max-width: 45%;
 }
 
-/*  FOOTER    */
-footer {
-  background-color: rgb(49, 47, 47);
-  padding: 20px;
+.header_menu {
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  height: 90px;
+  padding: 40px 0 0;
+  text-align: center;
 }
-
-.footer_title {
-  font-family: "Shrikland";
-  font-size: 10px;
-  color: white;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.footer_info {
-  display: flex;
-  flex-direction: column;
-}
-.footer_info i {
-  font-size: 12px;
-  padding-right: 10px;
-}
-.footer_info a {
-  width: 50%;
-  display: block;
-  color: white;
-  text-decoration: none;
-  padding: 5px 0;
-}
-.footer_info a:hover {
-  color: rgb(172, 164, 164);
+.header_menu i {
+  color: rgb(44, 44, 44);
+  transform: translate(-350%, -10%);
+  font-size: 25px;
 }
 
 /*  FORMULAIRE    */
@@ -96,7 +86,7 @@ footer {
   align-items: center;
   padding: 0 25px 25px;
 }
-.menu-top h1 {
+.menu-top h2 {
   margin: 30px 0 0;
   font-size: 27px;
   text-align: center;
@@ -105,15 +95,6 @@ footer {
   text-align: center;
   font-size: 18px;
   margin: 25px 0;
-}
-
-.menu-top__btn {
-  text-decoration: none;
-  color: white;
-  background: linear-gradient(174deg, #ff79da 2%, #9356dc);
-  border-radius: 100px;
-  padding: 15px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 
 /*  Partie FONCTION  */
@@ -157,10 +138,8 @@ footer {
   align-items: center;
 }
 .fonction__card li:hover {
-  background-color: #f8d4f5;
-}
-.fonction__card i:hover {
-  color: #ff79da;
+  background-color: #f5e9f4;
+  color: #9356dc;
 }
 .fonction__card a {
   font-weight: bold;
@@ -225,6 +204,114 @@ footer {
 
 .card_line {
   padding: 0 20px;
+}
+
+/*	!!!!!!!!	PAGE MENU	!!!!!!!!	 */
+.banniere {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+.banniere img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container-menu {
+  background-color: #fff;
+  transform: translate(0, -3%);
+  border-radius: 50px 50px 0 0;
+}
+.container-menu a {
+  display: flex;
+  width: 50%;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.container-menu_title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 0;
+  height: 50px;
+  padding-top: 30px;
+}
+.container-menu_title h2 {
+  margin: 0;
+  padding-right: 25px;
+  font-size: 25px;
+}
+.container-menu_title i {
+  font-size: 30px;
+}
+
+.container-menu_bloc {
+  padding: 30px 15px;
+}
+.container-menu_bloc h3 {
+  text-transform: uppercase;
+  font-weight: 200;
+  padding: 0 15px;
+}
+
+.container-menu_card {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  margin: 20px 0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.container-menu_text {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px 18px;
+  line-height: 23px;
+  justify-content: center;
+}
+
+.price {
+  display: flex;
+  align-items: flex-end;
+  padding: 15px;
+}
+
+/*  FOOTER    */
+footer {
+  background-color: rgb(49, 47, 47);
+  padding: 20px;
+}
+
+.footer_title {
+  font-family: "Shrikland";
+  font-size: 20px;
+  color: white;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer_info {
+  display: flex;
+  flex-direction: column;
+}
+.footer_info i {
+  font-size: 12px;
+  padding-right: 10px;
+}
+.footer_info a {
+  width: 50%;
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 5px 0;
+}
+.footer_info a:hover {
+  color: rgb(172, 164, 164);
 }
 
 /*# sourceMappingURL=style.css.map */
