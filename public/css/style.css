@@ -11,7 +11,7 @@ html, body {
   font-family: "Roboto", Arial, sans-serif;
 }
 
-body h1 {
+h1, h2 {
   font-family: "Shrikhand", regular;
 }
 
@@ -232,6 +232,7 @@ main {
 }
 
 .container-menu_title {
+  font-size: 15px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -288,7 +289,6 @@ footer {
 }
 
 .footer_title {
-  font-family: "Shrikland";
   font-size: 20px;
   color: white;
   display: block;
