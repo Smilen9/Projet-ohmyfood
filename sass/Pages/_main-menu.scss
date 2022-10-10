@@ -75,4 +75,25 @@
             align-items: flex-end;
             padding: 15px;
         }
+
+        @media screen and (min-width:665px) and (max-width:1439px){
+            .container-bloc{
+                width: 80%;
+                margin: auto;
+            }
+        }
+        
+
+        @media screen and (min-width:1025px) and (max-width:1440px){
+            .container-bloc{
+                display: flex;
+                justify-content: space-around;
+            }
+            .container-menu_card{
+                height: 85px;
+            }
+            .container-menu_text{
+                padding: 0 10px;
+            }
+        }
         

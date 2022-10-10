@@ -21,7 +21,8 @@ h1 {
 
 main {
   max-width: 1440px;
-  margin: 3px auto;
+  margin: auto;
+  margin-top: 3px;
 }
 
 /* Mixin pour les ombres du projet*/ /* Variable des couleurs les plus utilisés*/
@@ -241,7 +242,7 @@ header {
     display: flex;
   }
   .fonction__card li {
-    margin: 0 10px;
+    margin: 0 25px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1440px) {
@@ -332,6 +333,24 @@ header {
   padding: 15px;
 }
 
+@media screen and (min-width: 665px) and (max-width: 1439px) {
+  .container-bloc {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .container-bloc {
+    display: flex;
+    justify-content: space-around;
+  }
+  .container-menu_card {
+    height: 85px;
+  }
+  .container-menu_text {
+    padding: 0 10px;
+  }
+}
 /*  FOOTER    */
 footer {
   background-color: rgb(49, 47, 47);
