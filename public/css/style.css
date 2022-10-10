@@ -5,10 +5,14 @@
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 html, body {
   margin: 0;
   font-size: 16px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif, Arial;
 }
 
 h1 {
@@ -28,17 +32,16 @@ main {
 }
 /* Variable des couleurs les plus utilisés*/
 .bouton {
-  text-decoration: none;
   color: white;
-  background: linear-gradient(174deg, #ff79da 2%, #9356dc);
+  background: linear-gradient(174deg, #ff79da 3%, #9356dc);
   border-radius: 100px;
   padding: 15px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
 }
 
 .header_index {
   width: 100%;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
   height: 70px;
   padding: 30px 0;
 }
@@ -51,7 +54,7 @@ main {
 
 .header_menu {
   width: 100%;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
   height: 70px;
   padding: 10px 0;
   display: flex;
@@ -157,7 +160,7 @@ main {
   padding: 15px;
   margin: 25px 0;
   border-radius: 18px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
 }
@@ -187,7 +190,7 @@ main {
   width: 100%;
   height: 260px;
   border-radius: 25px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
 }
 .card:hover {
   transform: scale(1.03);
@@ -293,7 +296,7 @@ main {
   justify-content: space-between;
   height: 70px;
   margin: 20px 0;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
 }
 
