@@ -20,17 +20,11 @@ h1 {
 }
 
 main {
-  max-width: 425px;
-  margin-top: 5px;
+  max-width: 1440px;
+  margin: 3px auto;
 }
 
-@media screen and (max-width: 768px) and (min-width: 426px) {
-  main {
-    min-width: 426px;
-    max-width: 768px;
-  }
-}
-/* Variable des couleurs les plus utilisés*/
+/* Mixin pour les ombres du projet*/ /* Variable des couleurs les plus utilisés*/
 .bouton {
   color: white;
   background: linear-gradient(174deg, #ff79da 3%, #9356dc);
@@ -39,9 +33,13 @@ main {
   box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
 }
 
-.header_index {
-  width: 100%;
+header {
+  margin: auto;
+  max-width: 1440px;
   box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
+}
+
+.header_index {
   height: 70px;
   padding: 30px 0;
 }
@@ -53,9 +51,6 @@ main {
 }
 
 .header_menu {
-  width: 100%;
-  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.25);
-  height: 70px;
   padding: 10px 0;
   display: flex;
   align-items: flex-end;
@@ -70,15 +65,15 @@ main {
   font-size: 20px;
 }
 
-@media screen and (max-width: 768px) and (min-width: 426px) {
+@media screen and (max-width: 1440px) and (min-width: 426px) {
   .header_index {
     padding: 15px 0;
   }
-  .h .header_menu i {
+  .header_menu i {
     font-size: 25px;
   }
   .header__logo {
-    max-width: 240px;
+    max-width: 220px;
     margin: 6px auto;
   }
 }
@@ -233,11 +228,31 @@ main {
   padding: 0 20px;
 }
 
-@media screen and (max-width: 768px) and (min-width: 426px) {
+@media screen and (min-width: 426px) and (max-width: 949px) {
   .fonction__card {
-    margin: 0 auto;
-    width: 50%;
+    width: 70%;
+    padding: 0;
+    margin: auto;
     text-align: center;
+  }
+}
+@media screen and (min-width: 950px) and (max-width: 1440px) {
+  .fonction__card {
+    display: flex;
+  }
+  .fonction__card li {
+    margin: 0 10px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+  .restaurant {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .restaurant .card {
+    width: 45%;
+    margin: 10px;
   }
 }
 /*	!!!!!!!!	PAGE MENU	!!!!!!!!	 */
@@ -273,22 +288,24 @@ main {
   margin-bottom: 0;
   padding: 25px 5px 0;
 }
-.container-menu_title h2 {
+.container-menu_title h1 {
   margin: 0;
   padding-right: 25px;
-  font-size: 25px;
+  font-size: 35px;
 }
 .container-menu_title i {
   font-size: 30px;
 }
 
 .container-menu_bloc {
-  padding: 30px 15px;
+  padding: 30px 20px;
 }
-.container-menu_bloc h3 {
+.container-menu_bloc h2 {
+  border-bottom: 3px solid #99e2d8;
+  width: 40px;
   text-transform: uppercase;
   font-weight: 200;
-  padding: 0 15px;
+  padding-bottom: 10px;
 }
 
 .container-menu_card {
@@ -347,7 +364,7 @@ footer {
   color: rgb(172, 164, 164);
 }
 
-@media screen and (max-width: 768px) and (min-width: 426px) {
+@media screen and (max-width: 1440px) and (min-width: 426px) {
   .footer_title {
     font-size: 25px;
     text-align: center;

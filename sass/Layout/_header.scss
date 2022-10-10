@@ -1,6 +1,10 @@
-.header_index {
-	width: 100%;
+header{
+	margin: auto;
+	max-width: 1440px;
 	@include shadow;
+}
+
+.header_index {
 	height: 70px;
 	padding: 30px 0;
 }
@@ -11,9 +15,6 @@
 }
 
 .header_menu {
-	width: 100%;
-	@include shadow;
-	height: 70px;
 	padding: 10px 0;
 	display: flex;
 	align-items: flex-end;
@@ -28,19 +29,17 @@
 	}
 }
 
-@media screen and (max-width:768px) and (min-width:426px){
+@media screen and (max-width:1440px) and (min-width:426px){
 	.header_index {
 		padding: 15px 0;
 	}
-
-	.h
 
 	.header_menu i{
 		font-size: 25px;
 	}
 
 	.header__logo {
-		max-width: 240px;
+		max-width: 220px;
 		margin: 6px auto;
 		}
 }

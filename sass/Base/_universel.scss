@@ -23,14 +23,6 @@ h1{
 
 
 main {
-	max-width: 425px;
-	margin-top: 5px;
-}
-
-
-@media screen and (max-width:768px) and (min-width:426px){
-	main{
-		min-width: 426px;
-		max-width: 768px;
-	}
+	max-width: 1440px;
+	margin: 3px auto;
 }

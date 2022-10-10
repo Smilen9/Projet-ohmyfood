@@ -150,12 +150,35 @@
 }
 
 
+    @media screen and (min-width:426px) and (max-width:949px){
 
-@media screen and (max-width:768px) and (min-width:426px){
-
-    .fonction__card {
-        margin: 0 auto;
-        width: 50%;
-        text-align: center;
+        .fonction__card {
+            width: 70%;
+            padding: 0;
+            margin: auto;
+            text-align: center;
+        }
     }
-}
+
+    @media screen and (min-width:950px) and (max-width:1440px){
+
+        .fonction__card {
+            display: flex;
+            li{
+                margin: 0 10px;
+            }
+        }
+    }
+
+    @media screen and (min-width:769px) and (max-width:1440px){
+
+        .restaurant{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .card{
+                width: 45%;
+                margin: 10px;
+            }      
+        } 
+    }
