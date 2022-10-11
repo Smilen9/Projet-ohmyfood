@@ -1,0 +1,141 @@
+
+// media btn
+ @media screen and (min-width:769px) {
+    .bouton:hover{
+        opacity: 0.9;
+        box-shadow: 6px 8px 10px rgb(0 0 0 / 45%);
+    }
+    
+ }
+
+
+
+
+
+// Media pour le responsive du header
+
+@media screen and (min-width:426px){
+	.header_index {
+		padding: 15px 0;
+	}
+
+	.header_menu i{
+		font-size: 25px;
+	}
+
+	.header__logo {
+		max-width: 220px;
+		margin: 6px auto;
+		}
+}
+
+// fin du media pour le header
+
+
+
+// Media pour le responsive du main de l'index
+
+
+
+@media screen and (min-width:426px) and (max-width:1024px){
+
+    .fonction__card {
+        width: 70%;
+        padding: 0;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:1025px) {
+    
+    .fonction__card{
+        display: flex;
+        margin: 10px auto;
+        li{
+            margin: 0 25px;
+        }
+    }
+    
+}
+
+@media screen and (min-width:769px){
+
+    .restaurant{
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .card{
+            width: 40%;
+        }      
+    } 
+
+    .container_card{
+        padding:20px;
+
+    }
+}
+
+// Fin du media main de l'index
+
+
+
+
+
+
+// Media pour le responsive du main des menus
+
+@media screen and (min-width:769px) and (max-width:1439px){
+    
+    .container-menu_card{
+        width: 80%;
+        margin: 20px auto;
+    }
+    
+}
+
+@media screen and (min-width:1440px){
+    .container-bloc{
+        width: 75%;
+        margin: auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    .container-menu_title{
+        justify-content: space-evenly;
+        h1{
+            font-size: 30px;
+        }
+    }
+}
+
+
+
+// fin du media du main des menus
+
+
+
+
+
+
+// media pour le responsive du footer/
+
+@media screen and (min-width:426px){
+    .footer_title{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .footer_info {
+        align-items: center;
+        a {
+         width: 100%;    
+        }
+    }    
+}
+
+// fin du media pour le footer

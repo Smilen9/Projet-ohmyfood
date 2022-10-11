@@ -1,11 +1,9 @@
 header{
-	margin: auto;
-	max-width: 1440px;
 	@include shadow;
 }
 
 .header_index {
-	height: 70px;
+	height: 80px;
 	padding: 30px 0;
 }
 .header__logo {
@@ -29,17 +27,3 @@ header{
 	}
 }
 
-@media screen and (max-width:1440px) and (min-width:426px){
-	.header_index {
-		padding: 15px 0;
-	}
-
-	.header_menu i{
-		font-size: 25px;
-	}
-
-	.header__logo {
-		max-width: 220px;
-		margin: 6px auto;
-		}
-}

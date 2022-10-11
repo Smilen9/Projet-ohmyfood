@@ -9,21 +9,15 @@ a{
 	text-decoration: none;
 }
 
-
-
 html, body {
-	margin: 0;
-	font-size: 16px;
+	font-size: 17px;
 	font-family: 'Roboto', sans-serif, Arial;
+}
+
+main {
+	margin-top: 3px;
 }
 
 h1{
 	font-family: 'Shrikhand', cursive;
-}
-
-
-main {
-	max-width: 1440px;
-	margin:auto;
-	margin-top: 3px;
 }
