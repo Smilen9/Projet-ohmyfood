@@ -330,13 +330,12 @@ header {
   color: #99e2d8;
 }
 
-.container-menu_card:hover .item {
+.container-menu_card:active .item {
   margin-right: 0px;
   color: white;
   background-color: #99e2d8;
 }
-
-.container-menu_card:hover .item i {
+.container-menu_card:active .item i {
   transform: rotatez(0deg);
 }
 
@@ -441,6 +440,16 @@ footer {
   }
   .container-menu_title h1 {
     font-size: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container-menu_card:hover .item {
+    margin-right: 0px;
+    color: white;
+    background-color: #99e2d8;
+  }
+  .container-menu_card:hover .item i {
+    transform: rotatez(0deg);
   }
 }
 @media screen and (min-width: 426px) {

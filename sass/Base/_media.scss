@@ -3,7 +3,7 @@
  @media screen and (min-width:769px) {
     .bouton:hover{
         opacity: 0.9;
-        box-shadow: 6px 8px 10px rgb(0 0 0 / 45%);
+        box-shadow: 6px 8px 10px rgb(0 0 0 / 45%); 
     }
     
  }
@@ -110,6 +110,20 @@
         h1{
             font-size: 30px;
         }
+    }
+}
+
+
+
+@media screen and (min-width:1024px) {
+    
+    .container-menu_card:hover .item{
+        margin-right: 0px;
+        color: white;
+        background-color: $color-tertiaire;
+     i{
+        transform: rotatez(0deg);
+     }
     }
 }
 

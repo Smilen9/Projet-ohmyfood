@@ -112,12 +112,12 @@
             }
         }
         
-        .container-menu_card:hover .item{
+        .container-menu_card:active .item{
             margin-right: 0px;
             color: white;
             background-color: $color-tertiaire;
-        }
-        
-        .container-menu_card:hover .item i{
+        i{
             transform: rotatez(0deg);
+         }
         }
+    
