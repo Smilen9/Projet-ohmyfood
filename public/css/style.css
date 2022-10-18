@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*Balise universel*/
+/* Variable des couleurs les plus utilisés*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -28,32 +29,51 @@ h1 {
 
 .container-loader {
   position: absolute;
-  background: #f1f1f1;
+  background: #99e2d8;
+  opacity: 0.9;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity 1s ease-in-out;
   z-index: 1;
 }
-
-.dot {
-  margin: 0 15px;
-  animation: loader infinite 0.3 alternate;
+.container-loader .loader {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+.container-loader .loader-titre {
+  margin: 0 20px;
+  font-size: 50px;
+  font-weight: 900;
+  font-family: "Shrikhand", cursive;
+}
+.container-loader .loader-quart {
+  border-radius: 50px;
+  border: 6px solid rgba(255, 255, 255, 0.5);
+}
+.container-loader .loader-quart::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  border-radius: 50px;
+  border: 5px solid transparent;
+  border-top-color: #9356dc;
+  border-bottom-color: #ff79da;
+  animation: spin 1.5s alternate-reverse infinite;
 }
 
-.d2 {
-  animation-delay: 0.05s;
-}
-
-.d3 {
-  animation-delay: 0.1s;
-}
-
-@keyframes loader {
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
   100% {
-    transform: translateY(-30px);
+    transform: rotate(360deg);
   }
 }
 .heart {

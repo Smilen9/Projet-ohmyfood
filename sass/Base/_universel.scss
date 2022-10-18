@@ -1,4 +1,5 @@
 /*Balise universel*/
+@import '../Utils/variables';
 
 * {
 	box-sizing: border-box;
@@ -27,33 +28,56 @@ h1{
 
 .container-loader{
 	position: absolute;
-	background: #f1f1f1;
+	background: $color-tertiaire;
+	opacity: .9;
 	width: 100%;
 	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	transition: opacity 1s ease-in-out;
 	z-index: 1;
+	.loader{
+		position: relative;
+		width: 50px;
+		height: 50px;
+		display: inline-block;
+		}
+		.loader-titre{
+			margin: 0 20px;
+			font-size: 50px;
+			font-weight: 900;
+			font-family: "Shrikhand", cursive;
+		}
+		.loader-quart{
+			border-radius: 50px;
+			border: 6px solid rgba(255, 255, 255, 0.5);
+			&::after{
+				content: '';
+				position: absolute;
+				top: -6px;
+				left: -6px;
+				right: -6px;
+				bottom: -6px;
+				border-radius: 50px;
+				border: 5px solid transparent;
+				border-top-color: $color-primary;
+				border-bottom-color:$color-second ;
+				animation: spin 1.5s alternate-reverse infinite;
+			}
+			
+		}
+
 }
 
-.dot{
-	margin: 0 15px;
-	animation: loader infinite 0.3 alternate;
-}
 
-.d2{
-	animation-delay: 0.05s;
-}
-
-.d3{
-	animation-delay: 0.1s;
-}
-
-@keyframes loader {
-	100% {
-		transform: translateY(-30px);
+@keyframes spin {
+	0%{
+		transform: rotate(0deg);
 	}
+	100%{
+		transform: rotate(360deg);
+	}
+
 	
 }
 
