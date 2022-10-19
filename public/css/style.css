@@ -27,55 +27,6 @@ h1 {
   font-family: "Shrikhand", cursive;
 }
 
-.container-loader {
-  position: absolute;
-  background: #99e2d8;
-  opacity: 0.9;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-}
-.container-loader .loader {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  display: inline-block;
-}
-.container-loader .loader-titre {
-  margin: 0 20px;
-  font-size: 50px;
-  font-weight: 900;
-  font-family: "Shrikhand", cursive;
-}
-.container-loader .loader-quart {
-  border-radius: 50px;
-  border: 6px solid rgba(255, 255, 255, 0.5);
-}
-.container-loader .loader-quart::after {
-  content: "";
-  position: absolute;
-  top: -6px;
-  left: -6px;
-  right: -6px;
-  bottom: -6px;
-  border-radius: 50px;
-  border: 5px solid transparent;
-  border-top-color: #9356dc;
-  border-bottom-color: #ff79da;
-  animation: spin 1.5s alternate-reverse infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .heart {
   cursor: pointer;
   width: 12%;
@@ -147,6 +98,68 @@ header {
   font-size: 20px;
 }
 
+.container-loader {
+  position: fixed;
+  background: #99e2d8;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  animation-name: loading;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+.container-loader .loader-titre {
+  margin: 0 20px;
+  font-size: 50px;
+  font-weight: 900;
+  font-family: "Shrikhand", cursive;
+}
+.container-loader .loader-quart {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 50px;
+  border: 6px solid rgba(255, 255, 255, 0.5);
+}
+.container-loader .loader-quart::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  border-radius: 50px;
+  border: 6px solid transparent;
+  border-top-color: #9356dc;
+  border-bottom-color: #ff79da;
+  animation: spin 2s linear infinite;
+  /*nom de l'animation - duré de l'animation - le timing de la fonction - nombre de fois ou l'animation est joué*/
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loading {
+  0% {
+    opacity: 0.9;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 /*  FORMULAIRE    */
 .topform {
   padding: 20px;
