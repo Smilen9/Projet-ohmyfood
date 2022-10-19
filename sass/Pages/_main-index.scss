@@ -11,39 +11,37 @@
 	animation-name: loading;
 	animation-duration: 2s;
 	animation-timing-function: ease-in-out;
-	animation-delay: 1s;
+	animation-delay: 1.2s;
 	animation-fill-mode: both;
-
-
-		.loader-titre{
-			margin: 0 20px;
-			font-size: 50px;
-			font-weight: 900;
-			font-family: "Shrikhand", cursive;
-		}
-		.loader-quart{
-			position: relative;
-			width: 50px;
-			height: 50px;
-			display: inline-block;
+    .loader-titre{
+		margin: 0 20px;
+		font-size: 50px;
+		font-weight: 900;
+		font-family: "Shrikhand", cursive;
+	}
+	.loader-quart{
+		position: relative;
+		width: 50px;
+		height: 50px;
+		display: inline-block;
+		border-radius: 50px;
+		border: 6px solid rgba(255, 255, 255, 0.5);
+		&::after{
+			content: '';
+			position: absolute;
+			top: -6px;
+			left: -6px;
+			right: -6px;
+			bottom: -6px;
 			border-radius: 50px;
-			border: 6px solid rgba(255, 255, 255, 0.5);
-			&::after{
-				content: '';
-				position: absolute;
-				top: -6px;
-				left: -6px;
-				right: -6px;
-				bottom: -6px;
-				border-radius: 50px;
-				border: 6px solid transparent;
-				border-top-color: $color-primary;
-				border-bottom-color:$color-second ;
-			 	animation: spin 2s linear infinite;
-				/*nom de l'animation - duré de l'animation - le timing de la fonction - nombre de fois ou l'animation est joué*/
-			}
-			
+			border: 6px solid transparent;
+		    border-top-color: $color-primary;
+			border-bottom-color:$color-second ;
+			animation: spin 2s linear infinite;
+			/*nom de l'animation - duré de l'animation - le timing de la fonction - nombre de fois ou l'animation est joué*/
 		}
+			
+	}
 }
 
 @keyframes spin {
