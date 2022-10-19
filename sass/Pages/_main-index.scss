@@ -9,7 +9,7 @@
 	align-items: center;
 	z-index: 2;
 	animation-name: loading;
-	animation-duration: 2s;
+	animation-duration: .8s;
 	animation-timing-function: ease-in-out;
 	animation-delay: 1.2s;
 	animation-fill-mode: both;
@@ -124,9 +124,6 @@
             font-size: 30px;
             margin: 25px 0 10px;
         }
-        i {
-            margin: 0 25px 0 -1px;
-        }
     }
     .fonction__card {
         margin: 0;
@@ -159,6 +156,9 @@
             font-weight: bold;
             text-decoration: none;
             color: black;
+            width: 100%;
+            text-align: start;
+            padding: 20px;
         }
     }
 
