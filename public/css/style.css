@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /*Balise universel*/
-/* Variable des couleurs les plus utilisés*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -43,7 +42,6 @@ h1 {
 .heart_transparent:active {
   opacity: 0;
 }
-
 .heart_color {
   position: absolute;
   color: red;
@@ -52,6 +50,12 @@ h1 {
 }
 .heart_color:active {
   opacity: 1;
+}
+
+.heart_index {
+  position: absolute;
+  right: 5px;
+  bottom: 30px;
 }
 
 /* Mixin pour les ombres du projet*/ /* Variable des couleurs les plus utilisés*/

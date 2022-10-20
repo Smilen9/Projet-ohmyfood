@@ -1,5 +1,5 @@
 /*Balise universel*/
-@import '../Utils/variables';
+
 
 * {
 	box-sizing: border-box;
@@ -41,9 +41,7 @@ h1{
     opacity: 0;
 	}
 }
-}
-
-.heart_color{
+&_color{
     position: absolute;
     color: red;
     opacity: 0;
@@ -52,5 +50,11 @@ h1{
     opacity: 1;
 }
 }
+}
 
+.heart_index{
+    position: absolute;
+    right: 5px;
+    bottom: 30px;
+}
 
