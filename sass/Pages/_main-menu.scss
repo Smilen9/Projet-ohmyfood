@@ -141,7 +141,7 @@
             }
         }
         
-        .container-menu_card:active .item{
+        .container-menu_card:hover .item{
             margin-right: 0px;
             color: white;
             background-color: $color-tertiaire;

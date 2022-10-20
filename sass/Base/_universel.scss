@@ -1,5 +1,5 @@
 /*Balise universel*/
-
+@import "../Utils/variables";
 
 * {
 	box-sizing: border-box;
@@ -37,16 +37,16 @@ h1{
 &_transparent{
     position: absolute;
     opacity: 1;
-&:active{
+&:hover{
     opacity: 0;
 	}
 }
 &_color{
     position: absolute;
-    color: red;
+    color: $color-second ;
     opacity: 0;
     transition: .6s;
-&:active{
+&:hover{
     opacity: 1;
 }
 }
