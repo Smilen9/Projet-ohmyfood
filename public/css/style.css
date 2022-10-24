@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*Balise universel*/
-/* Variable des couleurs les plus utilisés*/
+/* Variable des couleurs les plus utilisés*/ /* Mixin pour les ombres du projet*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,12 +21,12 @@ h1 {
 
 .heart {
   cursor: pointer;
-  width: 12%;
-  align-items: center;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12%;
   font-size: 25px;
   position: relative;
-  justify-content: center;
 }
 .heart_transparent {
   position: absolute;
@@ -437,8 +437,8 @@ header {
   height: 100%;
   padding: 15px 5px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   font-size: 20px;
   margin-right: -85px;
   transition: margin-right 1.2s;

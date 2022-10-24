@@ -124,9 +124,7 @@
             width: 100px;
             height: 100%;
             padding: 15px 5px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include center;
             font-size: 20px;
             margin-right: -85px;
             transition: margin-right 1.2s;

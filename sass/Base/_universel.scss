@@ -1,5 +1,6 @@
 /*Balise universel*/
 @import "../Utils/variables";
+@import "../Utils/mixins";
 
 * {
 	box-sizing: border-box;
@@ -21,12 +22,10 @@ h1{
 
 .heart{
 	cursor: pointer;
+    @include center;
     width: 12%;
-    align-items: center;
-    display: flex;
     font-size: 25px;
     position: relative;
-    justify-content: center;
 &_transparent{
     position: absolute;
     opacity: 1;
