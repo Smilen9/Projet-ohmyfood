@@ -7,22 +7,6 @@
     }
     
  }
-
-//  Media coeur
-
-// @media screen  and (min-width:1024px){
-//     .heart_transparent{
-//      &:hover{
-//         opacity: 0;
-//         }
-//     }
-    
-//     .heart_color{
-//     &:hover{
-//         opacity: 1;
-//     }
-//     }
-// }
     
 
 
@@ -41,16 +25,47 @@
 	.header__logo {
 		max-width: 220px;
 		margin: 6px auto;
-		}
+	}
 }
 
 // fin du media pour le header
 
 
 
+
+
+
+// media pour le responsive du footer
+
+// Position du footer pour les formats Tablette et Desktop
+
+@media screen and (min-width:426px){
+    .footer_title{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .footer_info {
+        align-items: center;
+        a {
+         width: 100%;    
+        }
+    }    
+}
+
+// fin du media pour le footer
+
+
+
+
+
+
+
+
 // Media pour le responsive du main de l'index
 
 
+// Format Tablette !!!!!!!!
 
 @media screen and (min-width:426px) and (max-width:1024px){
 
@@ -61,6 +76,10 @@
         text-align: center;
     }
 }
+
+
+
+// Format Desktop !!!!!!!
 
 @media screen and (min-width:1025px) {
     
@@ -93,6 +112,11 @@
 }
 
 // Fin du media main de l'index
+
+
+
+
+
 
 
 
@@ -135,21 +159,3 @@
 
 
 
-
-// media pour le responsive du footer/
-
-@media screen and (min-width:426px){
-    .footer_title{
-        font-size: 25px;
-        text-align: center;
-    }
-
-    .footer_info {
-        align-items: center;
-        a {
-         width: 100%;    
-        }
-    }    
-}
-
-// fin du media pour le footer
