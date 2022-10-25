@@ -37,7 +37,7 @@ h1{
     position: absolute;
     color: $color-second ;
     opacity: 0;
-    transition: .6s;
+    transition: opacity .6s;
 &:hover{
     opacity: 1;
 }
