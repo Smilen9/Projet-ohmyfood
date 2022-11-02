@@ -177,9 +177,10 @@ header {
 .topform input {
   border: none;
   background-color: #eaeaea;
-  font-size: 20px;
   margin-left: 15px;
   outline: none;
+  width: 100%;
+  font-size: 17px;
 }
 
 /*   MENU de nav   */
@@ -509,6 +510,11 @@ footer {
   .header__logo {
     max-width: 220px;
     margin: 6px auto;
+  }
+}
+@media screen and (max-width: 320px) {
+  .topform form {
+    margin-left: 55px;
   }
 }
 @media screen and (min-width: 426px) {
