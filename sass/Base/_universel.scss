@@ -34,14 +34,16 @@ h1{
 	}
 }
 &_color{
+    color: transparent;
     position: absolute;
-    color: $color-second;
-    // color: linear-gradient($color-second,$color-primary);
-    // -webkit-background-clip: text;
     opacity: 0;
-    transition: opacity .6s;
 &:hover{
     opacity: 1;
+    background: linear-gradient(#ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    transition: opacity .6s ease-out;
     }
 }
 }
